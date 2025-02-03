@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <div class="preview-card">
+      <picture class="preview-card__media">
+        <source srcset="./images/image-header-desktop.jpg" media="(min-width:37.5rem)" width="540" height="446">
+        <img src="./images/image-header-mobile.jpg" alt="Three women collaborating at a desk in an open office."
+          class="preview-card__img" width="654" height="480">
+      </picture>
+      <div class="preview-card__content">
+        <h1 class="preview-card__title">
+          Get <strong class="accent">insights</strong> that help your business grow.
+        </h1>
+        <p class="preview-card__intro">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
+          overall efficiency.
+        </p>
+        <ul class="preview-card__stats" role="list">
+          <li class="preview-card__stat" role="listitem">
+            <strong class="preview-card__stat-number">10k+</strong>
+            <span class="preview-card__stat-word">companies</span>
+          </li>
+          <li class="preview-card__stat" role="listitem">
+            <strong class="preview-card__stat-number">314</strong>
+            <span class="preview-card__stat-word">templates</span>
+          </li>
+          <li class="preview-card__stat" role="listitem">
+            <strong class="preview-card__stat-number">12m+</strong>
+            <span class="preview-card__stat-word">queries</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    <p>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    </p>
+    <p>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/dionysia-lemonaki">Dionysia Lemonaki</a>.
+    </p>
 
-  Get insights that help your business grow.
+  </footer>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
