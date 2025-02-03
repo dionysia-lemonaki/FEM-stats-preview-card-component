@@ -61,7 +61,13 @@ ol[role='list'] {
 
 body {
   min-height: 100vh;
+  font-size: var(--font-size-body);
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
+  background-color: var(--very-dark-blue);
+  padding: 16px;
+  display: grid;
+  place-content: center;
 }
 
 
@@ -105,3 +111,22 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* Preview Card Styles */
+
+.preview-card {
+    background-color: var(--dark-desaturated-blue);
+    max-width: 20.438rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.preview-card__media {
+    background-color: var(--soft-violet);
+}
+
+.preview-card__img {
+    object-fit: contain;
+    height:auto;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
