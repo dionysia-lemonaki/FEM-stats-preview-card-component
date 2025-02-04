@@ -180,6 +180,17 @@ textarea:not([rows]) {
     text-transform: uppercase;
 }
 
+/* Attribution styles */
+
+.attribution {
+  margin-top: 16px;
+}
+
+.attribution,
+.attribution a {
+  color: var(--white);
+  text-align: center;
+}
 
 /* Larger Screen Styles */
 
